@@ -10,10 +10,12 @@
     <!-- 卡片试图区域 -->
     <el-card>
       <el-row>
-        <el-col class="clearfix">
+        <div class="clearfix">
           <el-button type="primary" @click="showAddCate">添加分类</el-button>
+        </div>
+        <el-col :span="6">
+        
         </el-col>
-
         <!-- 表格 -->
         <tree-table class="treeTable" :data="cateList" :columns="columns" :selection-type="false" :expand-type="false"
           :show-index="true" border :show-row-hover="false">
